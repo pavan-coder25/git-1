@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My form</h1>
+    <form action="file.hpp" method="get">
+        <p>Note:all elemaints contains * are mandatary</p>
+        <div>
+            <label for="fnam">First Name*:</label>
+             <input type="text" id="fnam" placeholder="enter name" name="fname" required minlength="3" required/>
+        </div>
+        <br>
+        <div>
+            <label for="lnam">Last name*:</label>
+            <input type="text" id="lnam" value="yadav" placeholder="enter last name" name="lname" required minlength="3" required/>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" placeholder="enter your mail" name="Email" readonly />
+            
+            <input type="hidden" name="jobrole" value="developer">
+            
+        </div>
+        <br>
+        <div>
+            <label for="pw">password:</label>
+            <input type="password" id="pw" placeholder="enter your password" name="pswd" min="8"/>
+        </div>
+        <br>
+        <div>
+            <label for="Age">Age:</label>
+            <input type="number" id="age" placeholder="enter your age" name="age" min="21" max="55" />
+        </div>
+        <br>
+        <div>
+            <label for="dod">Date of Birth:</label>
+            <input type="file" id="dob" name="dod" />
+        </div>
+        <br>
+        <!--radio button-->
+        <p>choose your gender:</p>
+        <input type="radio" name="gender" value="male" id="rd"><label for="rd">Male</label>
+        <input type="radio" name="gender" id="rd1"><label for="rd1">female</label>
+
+        <!--check boxes-->
+        <p>checkboxes</p>
+        <input type="checkbox" name="skills" value="html" id="c1"><label for="c1">HTMl</label>
+        <input type="checkbox" name="skills" value="CSS" id="c1"><label for="c1">css</label>
+        <input type="checkbox" name="skills" value="JAVA" id="c1"><label for="c1">java</label>
+
+        <!--drop doens-->
+        <br>
+        <label for="gende"choose gender></label>
+        <select name="gender" id="">
+            <option value="m">Male</option>
+            <option value="f">feMale</option>
+            <option value="others">others</option>
+            <option value="dont">dont want to mention</option>
+        </select>
+        <br>
+        <p>choose vechile</p>
+        <select name="vechile" id="multiple">
+            <optgroup label="bikes">
+                <option value="pluser">pluser</option>
+                <option value="duk">Duke</option>
+                <option value="r15r">R15</option>
+            </optgroup>
+            <optgroup label="cars">
+            <option value="MG">MG</option>
+            <option value="maruthi">Maruthi</option>
+            <option value="bugati">bugati</option>
+            </optgroup>
+           
+        </select>
+    
+
+        
+
+        
+        
+
+
+</body>
+</html>
